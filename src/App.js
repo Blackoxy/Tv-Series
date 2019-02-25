@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Intro from './components/Intro';
+import Tvseries from './components/Tv-Series';
 
 class App extends Component {
+  
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App"> 
+          <h1 className='App-intro'>TV Series List
+      
+          </h1>
+          <Intro message="Here you can find all of your most loved series"/>
+          <Tvseries />
       </div>
     );
-  }
+  } 
 }
 
 export default App;
